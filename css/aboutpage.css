@@ -21,6 +21,11 @@ h6 {
     font-weight: 700;
 }
 
+.boxedtext {
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
 .topnav {
     font-size: 14px; 
 }
