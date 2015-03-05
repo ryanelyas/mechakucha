@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Preference Page</title>
+
+        <!-- Javascript -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+
+        <!-- CSS -->
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+		
+		<script type="text/javascript">
+			function golibrary() {
+				var nativeLanguage = $('input:radio[name=NativeLanguage]:checked').val();
+				var learnLanguage = $('input:radio[name=LearnLanguage]:checked').val();
+				var genre = $('input:radio[name=Genre]:checked').val();
+				
+				if (!(nativeLanguage == "English" && learnLanguage == "French" && genre == "Fantasy")) {
+					document.location.href = "unavailable.html";
+				}
+				else {
+					document.location.href = "library.html";
+				}
+			}
+		</script>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Preference Page</h1>
+        </div>
+
+		<div align="center">
+			<table>
+				<tr>
+					<td style="text-align:left">
+						<b>What is your native language?</b>
+					</td>
+					<td>
+						<input type="radio" name="NativeLanguage" value="English" checked="checked">English
+						&nbsp;
+						<input type="radio" name="NativeLanguage" value="French">French
+						&nbsp;
+						<input type="radio" name="NativeLanguage" value="German">German
+						&nbsp;
+						<input type="radio" name="NativeLanguage" value="Korean">Korean
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left">
+						<b>What language would you like to learn?</b>
+					</td>
+					<td>
+						<input type="radio" name="LearnLanguage" value="English" checked="checked">English
+						&nbsp;
+						<input type="radio" name="LearnLanguage" value="French">French
+						&nbsp;
+						<input type="radio" name="LearnLanguage" value="German">German
+						&nbsp;
+						<input type="radio" name="NativeLanguage" value="Korean">Korean
+					</td>
+				</tr>
+				<tr>
+					<td style="text-align:left">
+						<b>What is your favourite genre?</b>
+					</td>
+					<td>
+						<input type="radio" name="Genre" value="Fantasy" checked="checked">Fantasy
+						&nbsp;
+						<input type="radio" name="Genre" value="Thriller">Thriller
+						<input type="radio" name="Genre" value="Romance">Romance
+						<input type="radio" name="Genre" value="Sci-Fi">Sci-Fi
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<p>Sorry, currently we only support <u>English</u> as native language, <u>French</u> as learning language and <u>Fantasy</u> genre ebooks.</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div align="center">
+							<input type="submit" id="submit" value="Save" onclick="golibrary()">
+						</div>
+					</td>
+				</tr>
+
+				<script>
+					$("#submit").button();
+				</script>
+			</table>
+		</div>
+    </body>
+</html>
