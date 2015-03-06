@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Content - The Novel Experience</title>
+    <title>Content - About Us</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -136,6 +136,28 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-60465020-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    <script>
+        
+      // unbounce-analytics-event-tracking v2.4.2 (fb0b914)
+      // For support go to http://support.unbounce.com/entries/25939384
+    
+      function EventTracker(){this.namespaces=[];var a=this;this.jQuery(function(){"function"==typeof jQuery&&a.namespaces.push(jQuery),"function"==typeof lp.jQuery&&a.namespaces.push(lp.jQuery)})}EventTracker.prototype.jQuery=lp.jQuery,EventTracker.prototype.trackOne=function(){var a=arguments,b=this;this.jQuery(window).load(function(){b.register.apply(b,a)})},EventTracker.prototype.trackAll=function(){this.trackOne(".lp-pom-button")},EventTracker.prototype.register=function(a,b,c,d){var e=this;this.jQuery(a).is(".lp-pom-button")&&this.jQuery(a).each(function(){var a=e.jQuery(this),f={},g=a.data("postponedHandlers")||[];a.closest(".lp-pom-form").length>0?(e.jQuery("form").unbind("keypress").keypress(function(b){13===b.which&&"textarea"!==b.target.nodeName.toLowerCase()&&(b.preventDefault(),e.clickHandler(b,a,!0))}),f.category=b||"Form",f.action=c||"Submit",f.label=d||""):(f.category=b||"Button",f.action=c||"Click",f.label=d||"'"+a.children("span").html()+"' (#"+a.attr("id")+")"),a.unbind("click.eventTrack");for(var h=0;h<e.namespaces.length;h++)if(e.namespaces[h](a).data("events")&&e.namespaces[h](a).data("events").click&&(g=g.concat(e.namespaces[h](a).data("events").click),e.namespaces[h](a).unbind("click")),e.namespaces[h](document).data("events")&&e.namespaces[h](document).data("events").live)for(var i=0;i<e.namespaces[h](document).data("events").live.length;i++){var j=e.namespaces[h](document).data("events").live[i];"click"===j.origType&&j.selector==="#"+a.attr("id")&&(g.push(j),e.namespaces[h](document).data("events").live.splice(i))}a.data({postponedHandlers:g,eventParams:f}),a.bind("click.eventTrack",function(a){e.clickHandler(a,this)})})},EventTracker.prototype.clickHandler=function(a,b,c){var d=this,e=this.jQuery(b),f=e.data("eventParams");"_blank"===e.attr("target")||(a.preventDefault(),a.stopPropagation()),e.parent(".lp-pom-form").length>0&&!e.siblings("form").eq(0).valid()||("undefined"!=typeof ga?ga("send","event",f.category,f.action,f.label,{hitCallback:function(){d.callback(e,c)}}):"undefined"!=typeof _gaq?(_gaq.push(["_set","hitCallback",function(){d.callback(e,c)}]),_gaq.push(["_trackEvent",f.category,f.action,f.label])):this.callback(e,c))},EventTracker.prototype.callback=function(a,b){var c=this,d=a.attr("href"),e=a.attr("target"),f=a.data("postponedHandlers").length>0,g="_self"===e&&f,h=/^#/.test(d)&&"#"!==d&&f;return formButton=a.closest(".lp-pom-form").length>0,b?a.siblings("form").submit():void(f&&(a.data("events").click=[],this.jQuery.extend(a.data("events").click,a.data("postponedHandlers")),a.click().unbind("click").bind("click.eventTrack",function(a){c.clickHandler(a,this)}),formButton||g||h)||"clkn//"!==d&&"clkg//"!==d&&(/^#/.test(d)?window.location.href=d:"_blank"!==a.attr("target")&&this.navigate(a)))},EventTracker.prototype.navigate=function(a){var b=document.all&&!document.addEventListener;if(b){var c=document.createElement("a");c.setAttribute("href",a.attr("href")),c.setAttribute("target",a.attr("target")),c.style.display="none",document.body.appendChild(c),c.click()}else window.location.href=a.attr("href")};var eventTracker=new EventTracker;  
+    
+      // Track all buttons and form submission
+      eventTracker.trackAll();
+
+    </script>
 
 </body>
 
