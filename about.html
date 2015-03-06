@@ -55,7 +55,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a id="about1" href="about.html">About</a>
+                        <a href="about.html" onclick="ga('send','event','Top Bar Links','Click', 'About')" target="_blank">About</a>
                     </li>
                     <li>
                         <a id="prices1" href="http://mechakucha2.herokuapp.com/pricingpage.html">Pricing Plans</a>
@@ -145,8 +145,6 @@
     
       ga('create', 'UA-60465020-1', 'auto');
       ga('send', 'pageview');
-      ga('send', 'event', 'about1', 'click', 'href', 1);
-      ga('send', 'event', 'prices1', 'click', 'href2', 3);
     </script>
 
 </body>
