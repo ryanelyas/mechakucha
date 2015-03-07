@@ -24,6 +24,7 @@
 				else {
 					document.location.href = "library.html";
 				}
+				onclick="ga('send','event','Form','Click', 'Preference', 1)";
 			}
 		</script>
     </head>
@@ -55,7 +56,7 @@
 					<td>
 						<input type="radio" name="LearnLanguage" value="English" checked="checked">English
 						&nbsp;
-						<input type="radio" name="LearnLanguage" value="French" onclick="ga('send','event','Desired Language','Click / Choose', 'French', 1)">French
+						<input type="radio" name="LearnLanguage" value="French">French
 						&nbsp;
 						<input type="radio" name="LearnLanguage" value="German">German
 						&nbsp;
