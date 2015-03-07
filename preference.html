@@ -24,7 +24,6 @@
 				else {
 					document.location.href = "library.html";
 				}
-				onclick="ga('send','event','Form','Click', 'Preference', 1)";
 			}
 		</script>
     </head>
@@ -40,13 +39,13 @@
 						<b>What is your native language?</b>
 					</td>
 					<td>
-						<input type="radio" name="NativeLanguage" value="English" checked="checked">English
+						<input type="radio" name="NativeLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Native Language', 'English', 1)">English
 						&nbsp;
-						<input type="radio" name="NativeLanguage" value="French">French
+						<input type="radio" name="NativeLanguage" value="French" onfocus="ga('send','event','Preference Form','Chose Native Language', 'French', 1)">French
 						&nbsp;
-						<input type="radio" name="NativeLanguage" value="German">German
+						<input type="radio" name="NativeLanguage" value="German" onfocus="ga('send','event','Preference Form','Chose Native Language', 'German', 1)">German
 						&nbsp;
-						<input type="radio" name="NativeLanguage" value="Korean">Korean
+						<input type="radio" name="NativeLanguage" value="Korean" onfocus="ga('send','event','Preference Form','Chose Native Language', 'Korean', 1)">Korean
 					</td>
 				</tr>
 				<tr>
@@ -54,13 +53,13 @@
 						<b>What language would you like to learn?</b>
 					</td>
 					<td>
-						<input type="radio" name="LearnLanguage" value="English" checked="checked">English
+						<input type="radio" name="LearnLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'English', 1)">English
 						&nbsp;
-						<input type="radio" name="LearnLanguage" value="French">French
+						<input type="radio" name="LearnLanguage" value="French" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'French', 1)">French
 						&nbsp;
-						<input type="radio" name="LearnLanguage" value="German">German
+						<input type="radio" name="LearnLanguage" value="German" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'German', 1)">German
 						&nbsp;
-						<input type="radio" name="NativeLanguage" value="Korean">Korean
+						<input type="radio" name="NativeLanguage" value="Korean" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'Korean', 1)">Korean
 					</td>
 				</tr>
 				<tr>
@@ -68,11 +67,11 @@
 						<b>What is your favourite genre?</b>
 					</td>
 					<td>
-						<input type="radio" name="Genre" value="Fantasy" checked="checked">Fantasy
+						<input type="radio" name="Genre" value="Fantasy" checked="checked" onfocus="ga('send','event','Preference Form','Chose Genre', 'Fantasy', 1)">Fantasy
 						&nbsp;
-						<input type="radio" name="Genre" value="Thriller">Thriller
-						<input type="radio" name="Genre" value="Romance">Romance
-						<input type="radio" name="Genre" value="Sci-Fi">Sci-Fi
+						<input type="radio" name="Genre" value="Thriller" onfocus="ga('send','event','Preference Form','Chose Genre', 'Thriller', 1)">Thriller
+						<input type="radio" name="Genre" value="Romance" onfocus="ga('send','event','Preference Form','Chose Genre', 'Romance', 1)">Romance
+						<input type="radio" name="Genre" value="Sci-Fi" onfocus="ga('send','event','Preference Form','Chose Genre', 'Sci-Fi', 1)">Sci-Fi
 					</td>
 				</tr>
 				<tr>
