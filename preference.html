@@ -1,17 +1,38 @@
+<%-- 
+    Document   : index
+    Created on : Jan 31, 2015, 12:15:50 PM
+    Author     : Ryan
+--%>
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Preference Page</title>
+<html lang="en">
 
-        <!-- Javascript -->
-        <script src="js/jquery-2.1.1.min.js"></script>
-        <script src="js/jquery.js"></script>
-        <script src="js/jquery-ui.js"></script>
+<head>
 
-        <!-- CSS -->
-        <link href="css/jquery-ui.css" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-		
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Content - About Us</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/about-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 		<script type="text/javascript">
 			function golibrary() {
 				var nativeLanguage = $('input:radio[name=NativeLanguage]:checked').val();
@@ -45,8 +66,8 @@
 						<b>What is your native language?</b>
 					</td>
 					<td>
-						<input type="radio" name="NativeLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Native Language', 'English', 1)">English
-						&nbsp;
+						<input type="radio" name="NativeLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Native Language', 'English', 1)">English						
+						&nbsp;						
 						<input type="radio" name="NativeLanguage" value="French" onfocus="ga('send','event','Preference Form','Chose Native Language', 'French', 1)">French
 						&nbsp;
 						<input type="radio" name="NativeLanguage" value="German" onfocus="ga('send','event','Preference Form','Chose Native Language', 'German', 1)">German
@@ -98,6 +119,12 @@
 				</script>
 			</table>
 		</div>
+	<!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+	
+	<!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	    
 	<script>
 	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
