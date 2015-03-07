@@ -26,6 +26,12 @@
 				}
 			}
 		</script>
+		<script type="text/javascript">
+			function gofocus(input) {
+				ga('send','event','Preference Form','Chose Radio Button', 'input', 1);
+				alert(input);
+			}
+		</script>
     </head>
     <body>
         <div align="center">
@@ -100,13 +106,6 @@
 	    
 	      ga('create', 'UA-60465020-1', 'auto');
 	      ga('send', 'pageview');
-	</script>
-	
-	<script type="text/javascript">
-		function gofocus(input) {
-			ga('send','event','Preference Form','Chose Radio Button', input, 1);
-			alert(input);
-		}
 	</script>
     </body>
 </html>
