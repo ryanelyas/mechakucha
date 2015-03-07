@@ -55,7 +55,7 @@
 					<td>
 						<input type="radio" name="LearnLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'English', 1)">English
 						&nbsp;
-						<input type="radio" name="LearnLanguage" value="French" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'French', 1)">French
+						<input id="llFrench" type="radio" name="LearnLanguage" value="French" onfocus="gofocus(this.id)">French
 						&nbsp;
 						<input type="radio" name="LearnLanguage" value="German" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'German', 1)">German
 						&nbsp;
@@ -100,6 +100,12 @@
 	    
 	      ga('create', 'UA-60465020-1', 'auto');
 	      ga('send', 'pageview');
+	</script>
+	
+	<script type="text/javascript">
+		function gofocus(input) {
+			alert(input);
+		}
 	</script>
     </body>
 </html>
