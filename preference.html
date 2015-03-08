@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Content - About Us</title>
+    <title>Preference Page</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -55,9 +55,45 @@
 		</script>
     </head>
     <body>
-        <div align="center">
-            <h1>Preference Page</h1>
-        </div>
+    	<!-- Navigation -->
+	    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	        <div class="container topnav">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand topnav" href="index.html" onclick="ga('send','event','Top Bar Links','Click', 'Home', 1)">Home</a>
+	                <a class="navbar-brand topnav" href="feedback2.html" onclick="ga('send','event','Top Bar Links','Click', 'Feedback', 1)">Leave Feedback</a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li>
+	                        <a href="about.html" onclick="ga('send','event','Top Bar Links','Click', 'About', 1)">About</a>
+	                    </li>
+	                    <li>
+	                        <a href="pricingpage.html" onclick="ga('send','event','Top Bar Links','Click', 'Pricing Plans', 1)">Pricing Plans</a>
+	                    </li>
+	                    <li>
+	                        <a href="#contact" onclick="ga('send','event','Top Bar Links','Click', 'Contact Us', 1)">Contact Us</a>
+	                    </li>
+	                    <li>
+	                        <a href="#contact" onclick="ga('send','event','Top Bar Links','Click', 'Login', 1)">Login</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
+    
+	        <div align="center">
+	            <h1>Preference Page</h1>
+	        </div>
 
 		<div align="center">
 			<table>
@@ -119,6 +155,34 @@
 				</script>
 			</table>
 		</div>
+		
+		<!-- Footer -->
+		    <footer>
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-12">
+		                    <ul class="list-inline">
+		                        <li>
+		                            <a href="index.html" onclick="ga('send','event','Bottom Bar Links','Click', 'Home', 1)">Home</a>
+		                        </li>
+		                        <li class="footer-menu-divider">&sdot;</li>
+		                        <li>
+		                            <a href="about.html" onclick="ga('send','event','Bottom Bar Links','Click', 'About', 1)">About</a>
+		                        </li>
+		                        <li class="footer-menu-divider">&sdot;</li>
+		                        <li>
+		                            <a href="pricingpage.html" onclick="ga('send','event','Bottom Bar Links','Click', 'Pricing Plans', 1)">Pricing Plans</a>
+		                        </li>
+		                        <li class="footer-menu-divider">&sdot;</li>
+		                        <li>
+		                            <a href="#contact" onclick="ga('send','event','Bottom Bar Links','Click', 'Contact Us', 1)">Contact Us</a>
+		                        </li>
+		                    </ul>
+		                    <p class="copyright text-muted small">Copyright &copy; Content 2015. All Rights Reserved</p>
+		                </div>
+		            </div>
+		        </div>
+		    </footer>
 	<!-- jQuery -->
 	    <script src="js/jquery.js"></script>
 	
