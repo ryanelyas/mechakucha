@@ -49,8 +49,7 @@
 		</script>
 		<script type="text/javascript">
 			function gofocus(input) {
-				ga('send','event','Whee Bar Links','Click', 'Home', 1);
-				alert(input);
+				ga('send','event','Preference Form','Click', input, 1);
 			}
 		</script>
     </head>
@@ -120,7 +119,7 @@
 					<td>
 						<input type="radio" name="LearnLanguage" value="English" checked="checked" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'English', 1)">English
 						&nbsp;
-						<input id="llFrench" type="radio" name="LearnLanguage" value="French" onfocus="gofocus(this.id)">French
+						<input id="llFrench" type="radio" name="LearnLanguage" value="French" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'French', 1)">French
 						&nbsp;
 						<input type="radio" name="LearnLanguage" value="German" onfocus="ga('send','event','Preference Form','Chose Desired Language', 'German', 1)">German
 						&nbsp;
